@@ -4,6 +4,7 @@ class Physician < ActiveRecord::Base
 
 	validates :name, :specialty, presence: true
 
+	scope :alphabetical, -> { order('LOWER(name) asc') }
 	scope :endocrinologists, -> { where('specialty = ?', "Endocrinology")}
 	scope :patient_count_last_n_days, lambda { |d| joins(:patients).where('patients.created_at > ?', d.days.ago).count  }
 

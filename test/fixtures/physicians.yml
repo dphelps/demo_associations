@@ -1,9 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  specialty: MyString
+Alpha:
+  hospital: Hamad
+  name: Alpha
+  specialty: Opthamology
 
-two:
-  name: MyString
-  specialty: MyString
+Beta:
+  hospital: Hamad
+  name: Beta
+  specialty: Cardiology
+    
+Eta:
+  hospital: AlAhli
+  name: Eta
+  specialty: Pediatrics
+    
+Delta:
+  hospital: Noor
+  name: Delta
+  specialty: Orthopedics
+    
+Gamma:
+  hospital: Noor
+  name: Gamma
+  specialty: Family Medicine
+    

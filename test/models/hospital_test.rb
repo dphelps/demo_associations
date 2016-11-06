@@ -14,4 +14,8 @@ class HospitalTest < ActiveSupport::TestCase
   	assert h.invalid?
   	assert_equal ["is too long (maximum is 50 characters)"], h.errors[:name]
   end
+
+  test "hospital has many physicians" do
+    assert_equal hospitals(:Hamad).physicians.count, 2
+  end
 end
